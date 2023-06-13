@@ -63,10 +63,10 @@ def db_wrtr(total, n2):
         except:
             pass 
 
-        try:
-           semaforr(conn, cursor, n)
-        except:
-            pass
+        # try:
+        #    semaforr(conn, cursor, n)
+        # except:
+        #     pass
  
         try:
             cursor.close()
@@ -87,7 +87,7 @@ def writerr_table(conn, cursor, resReviews):
     try:
         query7 = "INSERT INTO upz_hotels_review (hotelid, title, cons, pros, dt1, average_score, author_name, room_id, checkin, checkout, languagecode) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"         
 
-        batch_size = 250
+        batch_size = 400
         batch_values = []
 
         for item in resReviews:
