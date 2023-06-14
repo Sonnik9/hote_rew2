@@ -37,7 +37,7 @@ def db_opener(n1, n2):
             p2 = int(last_item) - 285000 - int(n1) + 1
             p1 = int(last_item) - 285000 - int(n2) + 1
         except:
-            pass
+            pass 
 
         try:
             select_query  = ("SELECT id, hotel_id, url, otziv FROM upz_hotels "
